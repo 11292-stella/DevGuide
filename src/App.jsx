@@ -9,6 +9,7 @@ import Java from "./components/Java"
 import SpringBoot from "./components/SpringBoot"
 import AppNavbar from "./components/AppNavbar"
 import Esempipronti from "./components/EsempiPronti"
+import Home from "./components/Home"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/java" element={<Java />} />
         <Route path="/springboot" element={<SpringBoot />} />
         <Route path="/esempipronti" element={<Esempipronti />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </>
   )

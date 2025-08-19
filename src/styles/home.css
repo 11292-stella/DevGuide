@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+
+.page-background {
+  background-image: url(/public/b1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: optimizeQuality;
+}
+
+.testo,
+h1 {
+  font-family: "Emilys Candy", serif;
+  font-size: x-large;
+}

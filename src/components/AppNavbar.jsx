@@ -11,7 +11,9 @@ const AppNavbar = function () {
     <>
       <Navbar className="navc" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">DevGuide</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/home">
+            DevGuide
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
