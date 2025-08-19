@@ -10,7 +10,8 @@
 }
 
 .testo,
-h1 {
+h1,
+h2 {
   font-family: "Emilys Candy", serif;
   font-size: x-large;
 }

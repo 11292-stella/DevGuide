@@ -1752,39 +1752,41 @@ public class LetturaFile {
                   <p className="mt-4">
                     <strong>📊 Confronto rapido</strong>
                   </p>
-                  <table className="table table-bordered text-center">
-                    <thead>
-                      <tr>
-                        <th>Tipo</th>
-                        <th>Obbligo di gestione</th>
-                        <th>Classe base</th>
-                        <th>Esempi</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Checked</td>
-                        <td>Sì</td>
-                        <td>
-                          <code>Exception</code>
-                        </td>
-                        <td>
-                          <code>IOException</code>, <code>SQLException</code>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Unchecked</td>
-                        <td>No</td>
-                        <td>
-                          <code>RuntimeException</code>
-                        </td>
-                        <td>
-                          <code>NullPointerException</code>,{" "}
-                          <code>ArithmeticException</code>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div className="table-responsive">
+                    <table className="table table-bordered text-center mb-0">
+                      <thead>
+                        <tr>
+                          <th>Tipo</th>
+                          <th>Obbligo di gestione</th>
+                          <th>Classe base</th>
+                          <th>Esempi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Checked</td>
+                          <td>Sì</td>
+                          <td>
+                            <code>Exception</code>
+                          </td>
+                          <td>
+                            <code>IOException</code>, <code>SQLException</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Unchecked</td>
+                          <td>No</td>
+                          <td>
+                            <code>RuntimeException</code>
+                          </td>
+                          <td>
+                            <code>NullPointerException</code>,{" "}
+                            <code>ArithmeticException</code>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
                   {/* Consigli */}
                   <p className="mt-4">
