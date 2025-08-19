@@ -175,12 +175,22 @@ const Creazione = function () {
                       </code>
                     </li>
                     <li className="mt-3">
+                      <strong>
+                        📛 Rinomina la branch principale (opzionale):
+                      </strong>
+                      <br />
+                      Se la tua branch si chiama <code>master</code> e vuoi
+                      usare <code>main</code>:
+                      <br />
+                      <code>git branch -m master main</code>
+                    </li>
+                    <li className="mt-3">
                       <strong>🚀 Spingi il progetto su GitHub:</strong>
                       <br />
                       <code>git push -u origin main</code>
                       <br />
-                      (Se la branch si chiama <code>master</code>, usa{" "}
-                      <code>origin master</code>)
+                      (Oppure <code>origin master</code> se non hai rinominato
+                      la branch)
                     </li>
                     <li className="mt-3">
                       <strong>✅ Fatto!</strong>
@@ -191,6 +201,7 @@ const Creazione = function () {
                   </ul>
                 </Card.Body>
               </Card>
+
               <h2 className="mt-5">Comandi git hub</h2>
               <Card bg="dark" text="light" className="mt-4 shadow">
                 <Card.Body>
