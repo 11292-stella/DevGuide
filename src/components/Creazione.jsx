@@ -295,6 +295,66 @@ const Creazione = function () {
                   </ul>
                 </Card.Body>
               </Card>
+              <h2 className="mt-5">Vercel</h2>
+              <Card bg="dark" text="light" className="mt-4 shadow">
+                <Card.Body>
+                  <Card.Title className="text-center">
+                    🚀 Deploy su Vercel (React / Vite)
+                  </Card.Title>
+                  <ul className="text-start mb-0">
+                    <li>
+                      <strong>📦 Build del progetto:</strong>
+                      <br />
+                      Assicurati che nel <code>package.json</code> ci sia lo
+                      script:
+                      <br />
+                      <code>"build": "vite build"</code>
+                      <br />E lancia <code>npm run build</code> prima del
+                      deploy.
+                    </li>
+                    <li className="mt-3">
+                      <strong>📁 Cartella di output:</strong>
+                      <br />
+                      Vite genera i file nella cartella <code>dist</code>.
+                      <br />
+                      Su Vercel, imposta <strong>
+                        Output Directory
+                      </strong> su <code>dist</code> nelle impostazioni del
+                      progetto.
+                    </li>
+                    <li className="mt-3">
+                      <strong>🔄 Routing client-side:</strong>
+                      <br />
+                      Se usi React Router o simili, crea un file{" "}
+                      <code>vercel.json</code> nella root con:
+                      <br />
+                      <code>{`{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}`}</code>
+                      <br />
+                      Questo evita l’errore “Page Not Found” quando navighi tra
+                      le pagine.
+                    </li>
+                    <li className="mt-3">
+                      <strong>🧪 Test locale:</strong>
+                      <br />
+                      Dopo la build, puoi testare con:
+                      <br />
+                      <code>npx serve dist</code>
+                      <br />
+                      Se funziona localmente, sei pronta per il deploy!
+                    </li>
+                    <li className="mt-3">
+                      <strong>✅ Fatto!</strong>
+                      <br />
+                      Il tuo sito è ora online su <code>vercel.app</code>.
+                      Condividilo con il mondo!
+                    </li>
+                  </ul>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
