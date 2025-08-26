@@ -36,6 +36,52 @@ const Esempipronti = function () {
                   </p>
                 </Card.Body>
               </Card>
+
+              <h2>esempio path </h2>
+              <Card bg="dark" text="light" className="mt-4 shadow">
+                <Card.Body>
+                  <Card.Title className="text-center">
+                    🧭 React – Esempio di App con Routing
+                  </Card.Title>
+
+                  <p className="mt-3">
+                    In React, per gestire la navigazione tra pagine si usa{" "}
+                    <strong>React Router DOM</strong>. Ecco un esempio base con{" "}
+                    <code>BrowserRouter</code>, <code>Routes</code> e{" "}
+                    <code>Route</code>.
+                  </p>
+
+                  <pre
+                    className="bg-black text-light p-3 rounded text-start overflow-auto"
+                    style={{ fontSize: "0.85rem" }}
+                  >
+                    {`import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;`}
+                  </pre>
+
+                  <p className="mt-3 text-center">
+                    ✅ Questo esempio usa: <strong>BrowserRouter</strong>,{" "}
+                    <strong>Routes</strong>, <strong>Route</strong> e{" "}
+                    <strong>path</strong> per gestire la navigazione.
+                  </p>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
