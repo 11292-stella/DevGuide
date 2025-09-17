@@ -1,0 +1,8 @@
+.page-background {
+  background-image: url(/public/b1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: optimizeQuality;
+}
