@@ -10,6 +10,7 @@ import SpringBoot from "./components/SpringBoot"
 import AppNavbar from "./components/AppNavbar"
 import Esempipronti from "./components/EsempiPronti"
 import Home from "./components/Home"
+import Angular from "./components/Angular"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/springboot" element={<SpringBoot />} />
         <Route path="/esempipronti" element={<Esempipronti />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/angular" element={<Angular />} />
       </Routes>
     </>
   )

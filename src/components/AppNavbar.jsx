@@ -43,6 +43,9 @@ const AppNavbar = function () {
                 <NavDropdown.Item Link as={Link} to="/react">
                   react
                 </NavDropdown.Item>
+                <NavDropdown.Item Link as={Link} to="/angular">
+                  angular
+                </NavDropdown.Item>
                 <NavDropdown.Item Link as={Link} to="/java">
                   java
                 </NavDropdown.Item>
